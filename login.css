@@ -133,7 +133,7 @@ a{
   .toggle-btn:hover {
     color: rgb(255, 255, 255,0.7);
   }
-.input-box input[type=text],input[type=password]{
+.input-box input{
    width: 100%;
    max-width: 400px;
    display: grid;
@@ -144,6 +144,12 @@ a{
    background: rgba(14, 14, 14, 0.9);
    border: 1px solid rgb(108, 108, 108);
    color: var(--color1);
+   transition: border-color 0.5s;
+   outline: none;
+}
+.input-box input:focus{
+    border-color: red;
+
 }
 button{
     font-family: "Roboto",sans-serif;
